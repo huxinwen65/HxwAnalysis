@@ -1,2 +1,3 @@
 # Analysis
 UI控件统计数据埋点
+导入后只需要，在AppDelegate的didFinishlaunch方法中，调用[AnalysisManager shareInstance]初始化，并将代理设置给他，最后实现AnalysisDelegate的接口方法即可。
