@@ -1,7 +1,7 @@
 # Analysis
 UI控件统计数据埋点
 导入后只需要，在AppDelegate的didFinishlaunch方法中，调用[AnalysisManager shareInstance]初始化，并将代理设置给他，最后实现AnalysisDelegate的接口方法即可。
-
+```
 @protocol AnalysisDelegate <NSObject>
 /**
  *UIControl响应事件回调，可以在这里添加埋点逻辑
@@ -42,3 +42,4 @@ UI控件统计数据埋点
  *@param delegate UITableViewDelegate的实现者
  */
 - (void)hxw_tableView:(UITableView*)tableView didSelectRowAtIndexPath:(NSIndexPath*)indexPath delagete:(id<UITableViewDelegate>)delegate;
+```
